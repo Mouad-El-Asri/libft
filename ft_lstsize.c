@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/14 21:18:31 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 01:05:58 by moel-asr         ###   ########.fr       */
+/*   Created: 2022/10/17 14:11:35 by moel-asr          #+#    #+#             */
+/*   Updated: 2022/10/17 16:49:41 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*head;
+	int		count;
+	t_list	*temp;
 
-	head = (t_list *)malloc(sizeof(t_list));
-	if (!head)
-		return (NULL);
-	head->content = content;
-	head->next = NULL;
-	return (head);
+	count = 0;
+	temp = lst;
+	while (temp)
+	{
+		count++;
+		temp = temp->next;
+	}
+	return (count);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char *s = "mouad";
-// 	t_list *x;
-// 	x = ft_lstnew(NULL);
-// 	if (x)
-// 		printf("%s", x->content);
-// }

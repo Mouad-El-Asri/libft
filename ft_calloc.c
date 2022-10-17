@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 16:31:42 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/16 18:35:16 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/17 15:30:46 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*x;
 
+	if (size && (count > (SIZE_MAX / size)))
+		return (NULL);
 	x = malloc (count * size);
 	if (!x)
 		return (NULL);
@@ -27,7 +29,7 @@ void	*ft_calloc(size_t count, size_t size)
 // int main(void)
 // {
 // 	char	*x;
-// 	x = calloc(SIZE_MAX, SIZE_MAX);
+// 	x = ft_calloc(SIZE_MAX, SIZE_MAX);
 // 	printf("d = %s", x);
 // 	//printf("p = %p\n", x);
 // }

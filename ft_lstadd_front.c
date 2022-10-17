@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 15:38:25 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 16:44:53 by moel-asr         ###   ########.fr       */
+/*   Created: 2022/10/17 01:06:45 by moel-asr          #+#    #+#             */
+/*   Updated: 2022/10/17 01:23:54 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int		back;
-	int		i;
-	char	*str;
-
-	if (!s1 || !set)
-		return (NULL);
-	i = 0;
-	while (s1[i] && ft_strchr(set, s1[i]))
-		i++;
-	s1 += i;
-	back = ft_strlen(s1) - 1;
-	while (back && ft_strchr(set, s1[back]))
-		back--;
-	str = ft_substr((char *)s1, 0, back + 1);
-	return (str);
+	new->next = *lst;
+	*lst = new;
 }
 
 // #include <stdio.h>
-// int	main(void)
+// int main()
 // {
-// 	printf("%s\n", ft_strtrim("   xxxtripouille", " x"));
-// 	return (0);
+// 	char *s = "mouad";
+// 	t_list *x;
+// 	x = ft_lstnew(s);
+
+// 	char *s0 = "el asri";
+// 	t_list *x0;
+// 	x0 = ft_lstnew(s0);
+
+// 	ft_lstadd_front(&x, x0);
+// 	printf("%s", x->next);
 // }

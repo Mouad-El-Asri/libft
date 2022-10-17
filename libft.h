@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 14:03:52 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/16 18:23:50 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/17 16:18:51 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,10 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
 
 #endif

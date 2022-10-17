@@ -6,18 +6,18 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:33:07 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/16 18:39:15 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/17 00:48:46 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_sep(char s, char c)
+static int	ft_sep(char c1, char c2)
 {
 	int	i;
 
 	i = 0;
-	if (s == c)
+	if (c1 == c2)
 		return (1);
 	return (0);
 }
@@ -38,22 +38,14 @@ static int	ft_count_words(char const *s, char c)
 	return (words);
 }
 
-char	**ft_split(char const *s, char c)
+static void	ft_split_core(char const *s, char **strs, int words, char c)
 {
-	int		i;
-	int		j;
-	int		start;
-	int		words;
-	char	**x;
+	int	i;
+	int	j;
+	int	start;
 
 	i = 0;
 	j = 0;
-	if (!s)
-		return (NULL);
-	words = ft_count_words(s, c);
-	x = (char **)malloc(sizeof(char *) * words + 1);
-	if (!x)
-		return (NULL);
 	while (i < words)
 	{
 		while (s[j] == c)
@@ -65,20 +57,33 @@ char	**ft_split(char const *s, char c)
 				break ;
 			j++;
 		}
-		x[i] = ft_substr(s, start, j - start);
-		j++;
+		strs[i] = ft_substr(s, start, j - start);
 		i++;
 	}
-	x[i] = NULL;
-	return (x);
+	strs[i] = NULL;
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		words;
+	char	**strs;
+
+	if (!s)
+		return (NULL);
+	words = ft_count_words(s, c);
+	strs = (char **)malloc(sizeof(char *) * words + 1);
+	if (!strs)
+		return (NULL);
+	ft_split_core(s, strs, words, c);
+	return (strs);
 }
 
 // #include <stdio.h>
 // int main()
 // {
 // 	int i = 0;
-// 	const char *s = "hello world 10202 go";
-// 	ft_split(NULL, ' ');
+// 	const char *s = "-he-llo -world -l- 10202 go";
+// 	char **j = ft_split(s, '0');
 // 	while (j[i])
 // 	{
 // 		printf("%s\n", j[i]);
