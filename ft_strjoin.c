@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:41:05 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 12:37:55 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:07:18 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[total_len - 1] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//   char *s1 = NULL;
-//   char *s2 = NULL;
-//   printf("%s", ft_strjoin(s1, s2));
-// }

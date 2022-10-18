@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:00:37 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 20:30:49 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:17:38 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[j] = '\0';
 	return (dest_length + src_length);
 }
-
-/*int	main(void)
-{
-	char dest[10] = "mo3ad";
-	char *dest1 = "mo3ad";
-
-	ft_strlcat(dest, dest1, 10);
-	printf("%s\n", dest); 
-}
-*/

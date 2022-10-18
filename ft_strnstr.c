@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 09:30:25 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 20:27:56 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:51:04 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,3 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%s", ft_strnstr("mouad", "uad", 5));
-// }

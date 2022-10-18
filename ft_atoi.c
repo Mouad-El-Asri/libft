@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:20:03 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 15:14:47 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:48:06 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (num * sign);
 }
-
-// #include <stdlib.h>
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	printf("%d\n", ft_atoi("-99999999999999999999999999"));
-// 	printf("%d", atoi("-99999999999999999999999999"));
-// }

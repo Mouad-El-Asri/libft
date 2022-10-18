@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:25:32 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/16 22:49:40 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:50:16 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ char	*ft_strdup(const char *str)
 	cp[i] = '\0';
 	return (cp);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	const char *src = "abc";
-// 	char *x = ft_strdup(NULL);
-// 	printf("%s", x);
-// }

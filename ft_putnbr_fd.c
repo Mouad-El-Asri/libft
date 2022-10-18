@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:24:02 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/07 14:39:38 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:49:46 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putnbr_fd(-2147483650, 1);
-// }

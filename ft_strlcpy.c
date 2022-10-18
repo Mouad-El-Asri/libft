@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 21:26:40 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/07 10:34:12 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:15:57 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 	dest[j] = '\0';
 	return (i);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    char dest[] = "mou";
-    printf ("%d", sizeof(dest));
-    size_t x = ft_strlcpy(dest, "amine", sizeof(dest) / sizeof(char));
-    printf("\n%zu\n%s", x, dest);
-}*/

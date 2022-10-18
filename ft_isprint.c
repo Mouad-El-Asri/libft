@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:19:03 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/10 19:56:27 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:48:43 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    printf("%d", ft_isprint('9'));    
-}*/

@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:10:42 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/10 21:26:16 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:12:37 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char *str = "mou\0ad";
-// 	int c = '\0';
-// 	char *x = ft_strrchr(str, c);
-// 	printf("%s", x);
-// }

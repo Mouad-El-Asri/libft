@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:45:30 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/10 20:06:05 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:49:18 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    printf("%c", ft_toupper('Z'));
-}*/

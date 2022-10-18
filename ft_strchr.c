@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:21:44 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 12:45:16 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:10:42 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char	a[] = "the cake is a lie !\0I'm hidden lol\r\n";
-// 	printf("%s\n",ft_strchr("",'\0'));
-// 	printf("%s\n",strchr("",'\0'));
-// }

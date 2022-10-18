@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:33:07 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 00:48:46 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:03:33 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,16 +77,3 @@ char	**ft_split(char const *s, char c)
 	ft_split_core(s, strs, words, c);
 	return (strs);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int i = 0;
-// 	const char *s = "-he-llo -world -l- 10202 go";
-// 	char **j = ft_split(s, '0');
-// 	while (j[i])
-// 	{
-// 		printf("%s\n", j[i]);
-// 		i++;
-// 	}
-// }

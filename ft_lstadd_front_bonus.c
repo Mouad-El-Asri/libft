@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 16:17:19 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 17:47:54 by moel-asr         ###   ########.fr       */
+/*   Created: 2022/10/17 01:06:45 by moel-asr          #+#    #+#             */
+/*   Updated: 2022/10/18 16:54:03 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*temp;
-
-	temp = *lst;
-	if (!*lst)
-		*lst = new;
-	else
-	{
-		while (temp->next)
-			temp = temp->next;
-		temp->next = new;
-	}
+	new->next = *lst;
+	*lst = new;
 }

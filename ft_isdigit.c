@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 13:10:53 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/06 15:47:21 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:48:37 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    printf("%d", ft_isdigit('9'));    
-}*/

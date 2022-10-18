@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 13:15:27 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 20:40:32 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:49:50 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putstr_fd("mouad", 1);
-// 	return (0);
-// }

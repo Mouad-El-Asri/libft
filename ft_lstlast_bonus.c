@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 01:06:45 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 01:23:54 by moel-asr         ###   ########.fr       */
+/*   Created: 2022/10/17 16:14:02 by moel-asr          #+#    #+#             */
+/*   Updated: 2022/10/18 16:52:53 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstlast(t_list *lst)
 {
-	new->next = *lst;
-	*lst = new;
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char *s = "mouad";
-// 	t_list *x;
-// 	x = ft_lstnew(s);
-
-// 	char *s0 = "el asri";
-// 	t_list *x0;
-// 	x0 = ft_lstnew(s0);
-
-// 	ft_lstadd_front(&x, x0);
-// 	printf("%s", x->next);
-// }

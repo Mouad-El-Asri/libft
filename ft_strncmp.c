@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:51:29 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/13 22:33:49 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:46:24 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    printf("%d", ft_strncmp("mouad", "amine", 1));
-}*/

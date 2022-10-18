@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 14:11:35 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/17 16:49:41 by moel-asr         ###   ########.fr       */
+/*   Created: 2022/10/17 16:17:19 by moel-asr          #+#    #+#             */
+/*   Updated: 2022/10/18 16:54:15 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	int		count;
 	t_list	*temp;
 
-	count = 0;
-	temp = lst;
-	while (temp)
+	temp = *lst;
+	if (!*lst)
+		*lst = new;
+	else
 	{
-		count++;
-		temp = temp->next;
+		while (temp->next)
+			temp = temp->next;
+		temp->next = new;
 	}
-	return (count);
 }

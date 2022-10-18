@@ -6,7 +6,7 @@
 #    By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 17:10:15 by moel-asr          #+#    #+#              #
-#    Updated: 2022/10/17 16:33:18 by moel-asr         ###   ########.fr        #
+#    Updated: 2022/10/18 15:46:51 by moel-asr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,11 +53,11 @@ SRCS = ft_atoi.c \
 	ft_tolower.c \
 	ft_toupper.c
 
-SRCSB = ft_lstnew.c \
-	ft_lstadd_front.c \
-	ft_lstsize.c \
-	ft_lstlast.c \
-	ft_lstadd_back.c
+SRCSB = ft_lstnew_bonus.c \
+	ft_lstadd_front_bonus.c \
+	ft_lstsize_bonus.c \
+	ft_lstlast_bonus.c \
+	ft_lstadd_back_bonus.c
 
 all : $(NAME)
 
@@ -75,4 +75,4 @@ re : fclean all
 bonus : $(OBJSB)
 	ar -rc $(NAME) $(OBJSB)
 
-.PHONY : all clean fclean re bonus
+.PHONY : clean fclean bonus

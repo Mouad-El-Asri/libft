@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 09:40:54 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/14 00:28:20 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:53:32 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ void	ft_bzero(void *s, size_t n)
 	}
 	s = x;
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-// 	int s[] = {255, 2, 3, 4};
-// 	bzero(NULL, 1);
-// 	printf("%d", s[0]);
-// }

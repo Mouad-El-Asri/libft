@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:07:54 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/12 21:30:42 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:48:57 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,10 +97,3 @@ char	*ft_itoa(int n)
 	ft_strrev(return_value);
 	return (return_value);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int a = -0;
-// 	printf("%s\n", ft_itoa(-2147483648));
-// }

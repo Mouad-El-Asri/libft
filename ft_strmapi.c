@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:35:09 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/16 15:52:25 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:50:55 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_str[i] = '\0';
 	return (new_str);
 }
-
-// char	fx(unsigned int i, char c)
-// {
-// 	i = 0;
-// 	if (c >= 97 && c <= 122)
-// 		c -= 32;
-// 	return (c);
-// }
-
-// #include <stdio.h>
-// int main()
-// {
-
-// 	char s[] = "mouad";
-
-// 	printf("%s", ft_strmapi(s, fx));
-// }

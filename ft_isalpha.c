@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 12:51:14 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/06 15:46:10 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:48:27 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-    printf("%d", ft_isalpha('9'));    
-}*/

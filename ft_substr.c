@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:51:39 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/13 23:21:57 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:51:26 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char *str = "abcdefgh";
-// 	printf("%s", ft_substr(str, 3, 3));
-// }
