@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:20:03 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/18 15:48:06 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:33:14 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ int	ft_atoi(const char *str)
 			sign *= -1;
 		i++;
 	}
-	if (str[i] == '-' || str[i] == '+')
-		return (0);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		num = num * 10 + (str[i] - 48);

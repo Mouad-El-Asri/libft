@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 21:26:40 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/18 16:15:57 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:34:34 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 
 	i = 0;
 	j = 0;
-	while (src[i] != '\0')
-	{
-		i++;
-		j++;
-	}
+	i = ft_strlen(src);
 	if (dest_size == 0)
 		return (i);
-	j = 0;
 	while (src[j] != '\0' && j < (dest_size - 1))
 	{
 		dest[j] = src[j];

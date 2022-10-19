@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 09:40:54 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/18 15:53:32 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:39:47 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*x;
-
-	i = 0;
-	x = (unsigned char *)s;
-	while (n > i)
-	{
-		x[i] = 0;
-		i++;
-	}
-	s = x;
+	ft_memset(s, 0, n);
 }

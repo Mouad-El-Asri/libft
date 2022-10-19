@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:35:09 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/18 15:50:55 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:41:03 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (s[i])
 	{
-		new_str[i] = (f)(i, (char)s[i]);
+		new_str[i] = (*f)(i, (char)s[i]);
 		i++;
 	}
 	new_str[i] = '\0';

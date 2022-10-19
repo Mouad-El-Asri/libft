@@ -6,7 +6,7 @@
 /*   By: moel-asr <moel-asr@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:38:25 by moel-asr          #+#    #+#             */
-/*   Updated: 2022/10/18 15:52:32 by moel-asr         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:41:50 by moel-asr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		back;
-	int		i;
+	int		front;
 	char	*str;
 
 	if (!s1 || !set)
 		return (NULL);
-	i = 0;
-	while (s1[i] && ft_strchr(set, s1[i]))
-		i++;
-	s1 += i;
+	front = 0;
+	while (s1[front] && ft_strchr(set, s1[front]))
+		front++;
+	s1 += front;
 	back = ft_strlen(s1) - 1;
 	while (back && ft_strchr(set, s1[back]))
 		back--;
