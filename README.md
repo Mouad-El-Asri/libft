@@ -11,7 +11,6 @@ This project serves as an essential learning experience, as it challenges me to 
 - [Example](#example)
 - [Function List](#function-list)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Introduction
